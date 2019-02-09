@@ -1,0 +1,32 @@
+{{#>v1_layout}}
+{{#*inline "body"}}
+{{>v1_layout-page-loader}}
+{{>v1_header-base-mobile}}
+<!-- begin:: Root -->
+<div class="k-grid k-grid--hor k-grid--root">
+	<!-- begin:: Page -->
+	<div class="k-grid__item k-grid__item--fluid k-grid k-grid--ver k-page``">
+		{{>v1_aside-base}}
+		<!-- begin:: Wrapper -->
+		<div class="k-grid__item k-grid__item--fluid k-grid k-grid--hor k-wrapper" id="k_wrapper">
+			{{>v1_header-base}}
+			<div class="k-grid__item k-grid__item--fluid k-grid k-grid--hor">
+				{{>v1_subheader-dashboard}}
+				{{>v1_products-content}}
+			</div>
+			{{>v1_footer-base}}
+		</div>
+		<!-- end:: Wrapper -->
+	</div>
+	<!-- end:: Page -->
+</div>
+<!-- end:: Root -->
+<!-- begin:: Topbar Offcanvas Panels -->
+{{>v1_offcanvas-quick-actions}}
+<!-- end:: Topbar Offcanvas Panels -->
+{{>v1_layout-quick-panel}}
+{{>v1_layout-scrolltop}}
+{{>v1_layout-toolbar}}
+{{>v1_layout-demo-panel}}
+{{/inline}}
+{{/v1_layout}}
