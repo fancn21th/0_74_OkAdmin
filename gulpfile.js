@@ -9,7 +9,8 @@ gulp.task('nodemon', function(cb) {
 	var called = false
 	return nodemon({
 		script: 'server.js',
-		ignore: ['gulpfile.js', 'node_modules/', 'data/', 'build/']
+		ext: 'hbs',
+		ignore: ['gulpfile.js', 'node_modules/']
 	})
 		.on('start', function() {
 			if (!called) {
@@ -51,4 +52,5 @@ gulp.task('default', gulp.series('nodemon', 'browser-sync'), function() {
 	// gulp.watch('public/**/*.js', ['js', browserSync.reload])
 	// gulp.watch('public/**/*.css', ['css'])
 	// gulp.watch('public/**/*.html', ['bs-reload'])
+	// gulp.watch('templates/**/*.hbs', gulp.series('nodemon', reload))
 })
