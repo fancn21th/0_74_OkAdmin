@@ -1,7 +1,7 @@
-const Handlebars = require("handlebars");
+const Handlebars = require('handlebars')
 
 const register = () => {
-  Handlebars.registerHelper("json", context => JSON.stringify(context));
-};
+	Handlebars.registerHelper('json', context => JSON.stringify(context))
+}
 
-module.exports = register;
+module.exports = register
